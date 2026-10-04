@@ -1,0 +1,134 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+/* Mensajes */
+.messages .error-message, .messages .success-message {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.messages .error-message {
+    color: #ff5722;
+}
+
+.messages .success-message {
+    color: #8bc34a;
+}
+
+/* Formulario */
+form {
+    text-align: left;
+    color: #fff;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+form input[type="radio"], form input[type="text"], form input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+form input[type="radio"]:focus, form input[type="text"]:focus, form input[type="datetime-local"]:focus {
+    border-color: #f7941d;
+    outline: none;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7941d;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d45d10;
+}
+
+/* Enlace */
+a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
+}
+
+a:hover {
+    color: #f7941d;
+}
+
+/* Estilos para campos específicos */
+#especificaFields {
+    display: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form label, form input[type="text"], form input[type="datetime-local"], form button {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para alinear los radio buttons y las etiquetas en la misma línea */
+.alinear-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 10px; /* Espaciado entre los grupos de radio */
+}

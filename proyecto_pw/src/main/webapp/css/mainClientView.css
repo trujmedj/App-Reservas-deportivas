@@ -1,0 +1,109 @@
+/* Estilos generales */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    width: 100%;
+    max-width: 900px; /* Aumentar el ancho máximo para contenido más amplio */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para resaltar el texto */
+}
+
+/* Acciones comunes */
+.common-actions {
+    margin-bottom: 20px;
+}
+
+.extra-links a {
+    color: #fff;
+    font-size: 1em;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    color: #f7941d;
+}
+
+/* Estilos de los botones */
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en caso de quedarse sin espacio */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    width: 100%; /* Ancho uniforme */
+    max-width: 200px; /* Define un ancho máximo */
+    padding: 15px 20px; /* Más espacio vertical alrededor del texto */
+    font-size: 1.2em; /* Tamaño del texto */
+    height: 75px; /* Altura fija más alta */
+    border: none;
+    border-radius: 5px;
+    background-color: #d45d10;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: flex; /* Para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.buttons button:hover {
+    background-color: #f7941d;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+/* Estilos de los párrafos */
+p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 800px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}

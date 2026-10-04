@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la ventana */
+}
+
+/* Contenedor principal que contiene la información */
+.container {
+    padding: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    margin: 10px auto; /* Agrega margen superior e inferior */
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+}
+
+/* Estilo del formulario */
+form {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr; /* Una columna */
+}
+
+label {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #f7941d; /* Naranja al hacer foco */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7941d; /* Naranja */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #d45d10; /* Cambio de color en hover */
+}
+
+/* Enlace de "Volver" */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f7941d;
+}
+
+/* Estilos de los mensajes */
+.message {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #ff0000; /* Rojo para errores */
+}
+
+.success-message {
+    color: #28a745; /* Verde para éxito */
+}
+
+/* Estilos específicos para el checkbox */
+#showPassword {
+    margin-right: 10px; /* Espaciado entre el checkbox y el texto */
+    cursor: pointer;
+}
+
+label[for="showPassword"] {
+    font-size: 1em;
+    display: flex;
+    align-items: center; /* Alinear el texto con el checkbox */
+    color: #fff; /* Asegurar que el texto sea blanco */
+    gap: 5px; /* Separación entre el checkbox y el texto */
+}
+
+/* Pie de página */

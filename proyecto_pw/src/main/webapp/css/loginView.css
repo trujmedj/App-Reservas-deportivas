@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Estilo del contenedor del formulario de login */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #f7941d; /* Naranja al hacer foco */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7941d; /* Naranja */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d45d10; /* Cambio de color en hover */
+}
+
+/* Checkbox para mostrar/ocultar contraseña */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Separación entre el checkbox y el texto */
+}
+
+#showPassword {
+    cursor: pointer;
+}
+
+label[for="showPassword"] {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Enlaces */
+.extra-links {
+    margin-top: 20px;
+}
+
+.extra-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+    color: #f7941d; /* Naranja al pasar el mouse */
+}
+
+/* Estilos de los mensajes de error y éxito */
+.message {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #ff0000; /* Rojo para errores */
+}
+
+.success-message {
+    color: #28a745; /* Verde para éxito */
+}

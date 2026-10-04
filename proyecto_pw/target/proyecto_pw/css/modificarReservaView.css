@@ -1,0 +1,107 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.8);;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Encabezados */
+h1 {
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiquetas y campos */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input:focus, select:focus {
+    border-color: #f7941d;
+    outline: none;
+    box-shadow: 0 0 4px rgb(247, 148, 29);
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7941d; /* Naranja */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d45d10;
+}
+
+/* Enlace "Volver" */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Alertas */
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.alert.error {
+    background: #ffcccc;
+    color: #b30000;
+}
+
+.alert.success {
+    background: #ccffcc;
+    color: #006600;
+}

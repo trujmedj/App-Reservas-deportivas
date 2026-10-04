@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente de baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+}
+
+select:focus {
+    outline: none;
+    border-color: #f7941d;
+}
+
+/* Botón de enviar */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f7941d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d45d10;
+}
+
+/* Enlace de volver */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mensajes de error y éxito */
+p {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+p[style="color: red;"] {
+    color: #ff4d4d;
+}
+
+p[style="color: green;"] {
+    color: #66cc66;
+}

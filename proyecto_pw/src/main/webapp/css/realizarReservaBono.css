@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+/* Mensajes de error y éxito */
+.error, .success {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+.error {
+    background-color: rgba(255, 0, 0, 0.2); /* Rojo claro */
+    color: red;
+}
+.success {
+    background-color: rgba(0, 255, 0, 0.2); /* Verde claro */
+    color: green;
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    max-width: 80%; /* Limita el ancho máximo de la tabla */
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.table th, .table td {
+    padding: 8px 12px; /* Reduce el padding para hacer la tabla más compacta */
+    text-align: center;
+    border-bottom: 1px solid #ffff;
+    font-size: 0.9em; /* Reduce el tamaño de la fuente */
+}
+
+.table th {
+    background-color: #f7941d;
+    color: white;
+}
+
+.table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Estilos de los formularios */
+form {
+    text-align: left;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input[type="datetime-local"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+input:focus, select:focus {
+    border-color: #f7941d; /* Naranja al hacer foco */
+    outline: none;
+}
+
+/* Botón de submit */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7941d; /* Naranja */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d45d10; /* Cambio de color en hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 800px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input[type="datetime-local"], input[type="number"], select {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
+
+/* Enlace de volver */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}

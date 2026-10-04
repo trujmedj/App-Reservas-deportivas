@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para resaltar el texto */
+}
+
+/* Botón de retroceso */
+.back-link a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #d45d10;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link a:hover {
+    background-color: #f7941d; /* Cambio de color en hover */
+}
+
+/* Alertas */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.alert.error {
+    background-color: #d9534f; /* Rojo */
+    color: #fff;
+}
+
+.alert.success {
+    background-color: #5cb85c; /* Verde */
+    color: #fff;
+}
+
+/* Estilos del formulario */
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #d45d10;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f7941d;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form label,
+    form input,
+    form select,
+    form button {
+        font-size: 0.9em;
+    }
+}
+
+/* Enlace de volver */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}

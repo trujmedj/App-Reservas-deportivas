@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Enlace de regreso */
+.back-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #d45d10;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link a:hover {
+    background-color: #f7941d;
+}
+
+/* Alertas */
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.alert.error {
+    background-color: #ff4d4d; /* Rojo para errores */
+    color: #fff;
+}
+
+.alert.success {
+    background-color: #4caf50; /* Verde para éxito */
+    color: #fff;
+}
+
+/* Formulario */
+form {
+    text-align: left;
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Contenedor del checkbox y su texto */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: auto; /* El checkbox no necesita ocupar todo el ancho */
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+    vertical-align: middle; /* Alineación vertical */
+}
+
+/* Asegura que el checkbox y su texto estén correctamente alineados */
+.checkbox-container label {
+    margin-top: 5px; /* Espacio entre el checkbox y el texto */
+}
+
+/* Contenedor para el checkbox "Uso exterior" */
+.checkbox-uso {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-uso input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+/* Campos de entrada */
+select, input[type="text"], input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+select:focus, input:focus {
+    border-color: #f7941d; /* Naranja al hacer foco */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7941d; /* Naranja */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d45d10; /* Cambio de color en hover */
+}
+
+/* Enlace de volver */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}

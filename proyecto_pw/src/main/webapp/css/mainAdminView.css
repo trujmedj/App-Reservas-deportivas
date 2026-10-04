@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la ventana */
+}
+
+/* Contenedor principal */
+.container {
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    width: 100%;
+    max-width: 900px; /* Aumentar el ancho máximo para contenido más amplio */
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra para resaltar el texto */
+}
+
+/* Acciones comunes */
+.common-actions {
+    margin-bottom: 20px;
+}
+
+.extra-links a {
+    color: #fff;
+    font-size: 1em;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    color: #f7941d;
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    max-width: 80%; /* Limita el ancho máximo de la tabla */
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.table th, .table td {
+    padding: 8px 12px; /* Reduce el padding para hacer la tabla más compacta */
+    text-align: center;
+    border-bottom: 1px solid #ffff;
+    font-size: 0.9em; /* Reduce el tamaño de la fuente */
+}
+
+.table th {
+    background-color: #f7941d;
+    color: white;
+}
+
+.table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos de los botones en disposición horizontal */
+.buttons {
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones con espacio entre ellos */
+    gap: 20px; /* Espacio entre los botones */
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    width: 100%; /* Ancho uniforme */
+    max-width: 200px; /* Define un ancho máximo */
+    padding: 15px 20px; /* Más espacio vertical alrededor del texto */
+    font-size: 1.2em; /* Tamaño del texto */
+    height: 75px; /* Altura fija más alta */
+    border: none;
+    border-radius: 5px;
+    background-color: #d45d10;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: flex; /* Para centrar contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+
+
+
+.buttons button:hover {
+    background-color: #f7941d;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 800px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    /* En dispositivos móviles, los botones se apilan verticalmente */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

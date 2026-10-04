@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #f7941d, #d45d10, #7b3e14); /* Gradiente inspirado en baloncesto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la ventana */
+}
+
+/* Contenedor principal que contiene la información */
+/* Contenedor principal que contiene la información */
+.welcome-container {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #d45d10;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #f7941d; /* Cambio de color en hover */
+}
+
+/* Estilo del pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 1em;
+}
